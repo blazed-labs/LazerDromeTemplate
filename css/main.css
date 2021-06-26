@@ -9,3 +9,7 @@ a{
 a:hover{
   color:#DDC3D0;
 }
+
+blz-nav a[is=logo]{
+  font-family: 'Orbitron', sans-serif;
+}
