@@ -1,15 +1,50 @@
 /* The Blazed Standard CSS Library */
 
+/* Util */
+[is=right]{
+  float:right;
+}
+[is=left]{
+  float:left;
+}
+
+[size=five]{
+  width:5%;
+}
+[size=ten]{
+  width:10%;
+}
+[size=ft]{
+  width:15%;
+}
+[size=qtr]{
+  width:25%;
+}
+[size=half]{
+  width:50%;
+}
+[size=full]{
+  width:100%;
+}
+
+blz-grid, main{
+  padding:0;
+  margin:0;
+}
+
+blz-grid div{
+  display:inline-block;
+  padding:0;
+  margin:0;
+}
+
 /* Navigation */
 blz-nav{
- padding:10px; 
+ overflow:auto;
 }
 
 blz-nav a{
   display:inline-block;
   padding:20px 10px;
   text-decoration: none;
-}
-blz-nav a[is=logo]{
-  
 }

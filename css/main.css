@@ -15,3 +15,7 @@ blz-nav a[is=logo]{
   color: rgb(255, 38, 38);
   text-shadow: 1px 1px rgba(255,255,255,0.4);
 }
+
+blz-grid span{
+  color:#fff;
+}

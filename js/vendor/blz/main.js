@@ -11,5 +11,16 @@ class BlazedNavElement extends 	HTMLElement {
   }
 }
 
+class BlazedGridElement extends 	HTMLElement {
+  constructor() {
+    // Always call super first in constructor
+    super();
+
+    // Element functionality written in here
+
+  }
+}
+
 
 customElements.define('blz-nav', BlazedNavElement, { extends: 'nav' });
+customElements.define('blz-grid', BlazedGridElement, { extends: 'nav' });
