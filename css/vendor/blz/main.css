@@ -1,1 +1,15 @@
 /* The Blazed Standard CSS Library */
+
+/* Navigation */
+blz-nav{
+ padding:10px; 
+}
+
+blz-nav a{
+  display:inline-block;
+  padding:20px 10px;
+  text-decoration: none;
+}
+blz-nav a[is=logo]{
+  color: rgb(120, 180, 189);
+}

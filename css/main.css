@@ -2,3 +2,10 @@ body{
   background-color:#171717;
   /* #32292F */
 }
+
+a{
+  color:#FDF5BF;
+}
+a:hover{
+  color:#DDC3D0;
+}
