@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>LazerDrome | Home</title>
-   <link href="css/vendor/blz/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/vendor/blz/main.css" rel="stylesheet" type="text/css" />
     <link href="css/vendor/blz/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/vendor/blz/burger.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,13 @@
     <header>
       <blz-nav>
         <a is="logo" href="/index.html">LazerDrome</a>
-        <div is="right">
+        <label id="burger" for="check" onmouseup="mx('mainMenu');">
+          <input type="checkbox" id="check"/> 
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div is="right" id="mainMenu">
           <a href="/index.html">Home</a>
           <a href="/about.html">About</a>
           <a href="/services.html">Services</a>
@@ -25,6 +32,7 @@
       </blz-nav>
     </header>
     <main>
+      <!--
       <blz-hero>
         <h1>Hero Title</h1>
         <h2>Hero Subtitle</h2>
@@ -51,6 +59,10 @@
           <button>Button</button>
         </blz-field>
       </blz-form>
+      -->
+      <p>
+        Main content.
+      </p>
     </main>
     <br />
     <footer>

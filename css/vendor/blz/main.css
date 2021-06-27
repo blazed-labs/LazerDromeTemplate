@@ -12,15 +12,6 @@ body, html{
   float:left;
 }
 
-[size=five]{
-  width:5%;
-}
-[size=ten]{
-  width:10%;
-}
-[size=ft]{
-  width:15%;
-}
 [size=qtr]{
   width:25%;
 }
@@ -44,6 +35,7 @@ blz-grid{
   width:100%;
   white-space: nowrap;
 }
+
 blz-grid div{
   display:inline-block;
   padding:0;
@@ -66,12 +58,21 @@ blz-hero h2{
 
 /* Navigation */
 blz-nav{
- overflow:auto;
+ overflow: auto;
+ white-space: nowrap;
 }
 
 blz-nav a{
   display:inline-block;
   padding:20px 10px;
+  text-decoration: none;
+}
+
+blz-nav a[is=logo]{
+  padding:35px 10px;
+}
+
+blz-nav a[is=logo]:hover{
   text-decoration: none;
 }
 
@@ -90,4 +91,19 @@ blz-form input[type=button], blz-form input[type=submit], button{
   padding: 8px 10px;
   border:1px solid transparent;
   letter-spacing: 0.65px;
+}
+
+@media only screen and (max-width: 480px) {
+  blz-nav, blz-nav div, blz-nav a, header{
+    clear:both;
+    float:none!important;
+  }
+  blz-nav a{
+    display:block;
+  }
+  main{
+    width:100%;
+    position:initial;
+    margin:0;
+  }
 }

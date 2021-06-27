@@ -1,5 +1,16 @@
 /* The Blazed Stardard JS Library */
 
+/* Toggle visibility */
+
+function mx(item){
+  var i = document.getElementById(item);
+  if(i.style.display == 'block'){
+    i.style.display = 'none';
+  } else {
+    i.style.display = 'block';
+  }
+}
+
 
 class BlazedNavElement extends 	HTMLElement {
   constructor() {
