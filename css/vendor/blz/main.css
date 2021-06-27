@@ -1,4 +1,8 @@
 /* The Blazed Standard CSS Library */
+body, html{
+  overflow-x:hidden;
+  letter-spacing: 0.7px;
+}
 
 /* Util */
 [is=right]{
@@ -20,6 +24,9 @@
 [size=qtr]{
   width:25%;
 }
+[size=third]{
+  width:33.33%;
+}
 [size=half]{
   width:50%;
 }
@@ -30,12 +37,31 @@
 blz-grid, main{
   padding:0;
   margin:0;
+  border:0;
 }
 
+blz-grid{
+  width:100%;
+  white-space: nowrap;
+}
 blz-grid div{
   display:inline-block;
   padding:0;
   margin:0;
+}
+
+blz-hero{
+  display:block;
+  padding:20px;
+  margin:0px 10px;
+}
+
+blz-hero h1{
+  font-size:30px;
+}
+
+blz-hero h2{
+  font-size:20px;
 }
 
 /* Navigation */
@@ -47,4 +73,21 @@ blz-nav a{
   display:inline-block;
   padding:20px 10px;
   text-decoration: none;
+}
+
+blz-form input[type=text], input[type=password], input[type=email], input[type=tel]{
+  display:input-block;
+  padding:8px 10px;
+  border:1px solid transparent;
+  letter-spacing: 0.75px;
+}
+
+blz-form input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus{
+  outline:0;
+}
+
+blz-form input[type=button], blz-form input[type=submit], button{
+  padding: 8px 10px;
+  border:1px solid transparent;
+  letter-spacing: 0.65px;
 }

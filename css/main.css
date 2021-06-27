@@ -16,6 +16,28 @@ blz-nav a[is=logo]{
   text-shadow: 1px 1px rgba(255,255,255,0.4);
 }
 
-blz-grid span{
+blz-nav a[is=logo]:hover{
+  color:#fff;
+  text-shadow: 1px 1px rgba(0,0,255,0.4);
+}
+
+blz-grid span, blz-hero h1, blz-hero h2{
+  color:#fff;
+}
+
+label{
+  color:#fff;
+}
+
+blz-form input[type=text]:hover, input[type=password]:hover, input[type=email]:hover, input[type=tel]:hover{
+  border:1px solid rgba(255,38,38,0.4);
+}
+
+blz-form input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus{
+  border:1px solid rgb(255,38,38);
+}
+
+blz-form input[type=button]:hover, blz-form input[type=submit]:hover, button:hover{
+  background:rgb(255,38,38);
   color:#fff;
 }
