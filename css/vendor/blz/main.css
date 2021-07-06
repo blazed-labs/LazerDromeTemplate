@@ -69,7 +69,12 @@ blz-nav a{
 }
 
 blz-nav a[is=logo]{
-  padding:35px 10px;
+  padding:35px 12px;
+}
+
+blz-nav div{
+  padding-top:18px;
+  padding-right: 8px;
 }
 
 blz-nav a[is=logo]:hover{
@@ -97,6 +102,9 @@ blz-form input[type=button], blz-form input[type=submit], button{
   blz-nav, blz-nav div, blz-nav a, header{
     clear:both;
     float:none!important;
+  }
+  blz-nav div{
+    padding:0;
   }
   blz-nav a{
     display:block;
