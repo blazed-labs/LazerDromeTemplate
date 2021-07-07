@@ -1,5 +1,7 @@
 # LazerDrome Template
-This is an open source website template maxe by Blazed Labs.
+This is an open source website template made by Blazed Labs.
+
+This template also showcases the [Blazed Standard CSS & JS library](https://github.com/blazed-space/blz-std).
 
 ## Demo
 ![Screenshot](screenshot.PNG?raw=true "Blazed Labs Main Website")
