@@ -8,229 +8,218 @@ html {
     box-sizing: border-box;
     font-size: 16px;
   }
-  /*
-  Star selector may cause slowdown
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  */
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }/*
+/*
+Star selector may cause slowdown
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*/
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
     blz/main.css
     The Blazed Standard CSS Library
 */
-
 body, html{
-    overflow-x:hidden;
-    letter-spacing: 0.7px;
-  }
+  overflow-x:hidden;
+  letter-spacing: 0.7px;
+}
+[is=right]{
+  float:right;
+}
+[is=left]{
+  float:left;
+}
+[size=qtr]{
+  width:25%;
+}
+[size=third]{
+  width:33.33%;
+}
+[size=half]{
+  width:50%;
+}
+[size=full]{
+  width:100%;
+}
   
-  /* Util */
-  [is=right]{
-    float:right;
+blz-grid, main{
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+blz-grid{
+  width:100%;
+  white-space: nowrap;
+}
+
+blz-grid div{
+  display:inline-block;
+  padding:0;
+  margin:0;
+}
+
+blz-hero{
+  display:block;
+  padding:20px;
+  margin:0px 10px;
+}
+
+blz-hero h1{
+  font-size:30px;
+}
+
+blz-hero h2{
+  font-size:20px;
+}
+
+/* Navigation */
+blz-nav{
+  overflow: auto;
+  white-space: nowrap;
+}
+
+blz-nav a{
+  display:inline-block;
+  padding:20px 10px;
+  text-decoration: none;
+}
+
+blz-nav a[is=logo]{
+  padding:35px 12px;
+}
+
+blz-nav div{
+  padding-top:18px;
+  padding-right: 8px;
+}
+
+blz-nav a[is=logo]:hover{
+  text-decoration: none;
+}
+
+blz-form input[type=text], input[type=password], input[type=email], input[type=tel]{
+  display:input-block;
+  padding:8px 10px;
+  border:1px solid transparent;
+  letter-spacing: 0.75px;
+}
+
+blz-form input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus{
+  outline:0;
+}
+
+blz-form input[type=button], blz-form input[type=submit], button{
+  padding: 8px 10px;
+  border:1px solid transparent;
+  letter-spacing: 0.65px;
+}
+
+@media only screen and (max-width: 480px) {
+  blz-nav, blz-nav div, blz-nav a, header{
+    clear:both;
+    float:none!important;
   }
-  [is=left]{
-    float:left;
-  }
-  
-  [size=qtr]{
-    width:25%;
-  }
-  [size=third]{
-    width:33.33%;
-  }
-  [size=half]{
-    width:50%;
-  }
-  [size=full]{
-    width:100%;
-  }
-  
-  blz-grid, main{
-    padding:0;
-    margin:0;
-    border:0;
-  }
-  
-  blz-grid{
-    width:100%;
-    white-space: nowrap;
-  }
-  
-  blz-grid div{
-    display:inline-block;
-    padding:0;
-    margin:0;
-  }
-  
-  blz-hero{
-    display:block;
-    padding:20px;
-    margin:0px 10px;
-  }
-  
-  blz-hero h1{
-    font-size:30px;
-  }
-  
-  blz-hero h2{
-    font-size:20px;
-  }
-  
-  /* Navigation */
-  blz-nav{
-   overflow: auto;
-   white-space: nowrap;
-  }
-  
-  blz-nav a{
-    display:inline-block;
-    padding:20px 10px;
-    text-decoration: none;
-  }
-  
-  blz-nav a[is=logo]{
-    padding:35px 12px;
-  }
-  
   blz-nav div{
-    padding-top:18px;
-    padding-right: 8px;
+    padding:0;
   }
-  
-  blz-nav a[is=logo]:hover{
-    text-decoration: none;
+  blz-nav a{
+    display:block;
   }
-  
-  blz-form input[type=text], input[type=password], input[type=email], input[type=tel]{
-    display:input-block;
-    padding:8px 10px;
-    border:1px solid transparent;
-    letter-spacing: 0.75px;
+  main{
+    width:100%;
+    position:initial;
+    margin:0;
   }
-  
-  blz-form input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus{
-    outline:0;
-  }
-  
-  blz-form input[type=button], blz-form input[type=submit], button{
-    padding: 8px 10px;
-    border:1px solid transparent;
-    letter-spacing: 0.65px;
-  }
-  
-  @media only screen and (max-width: 480px) {
-    blz-nav, blz-nav div, blz-nav a, header{
-      clear:both;
-      float:none!important;
-    }
-    blz-nav div{
-      padding:0;
-    }
-    blz-nav a{
-      display:block;
-    }
-    main{
-      width:100%;
-      position:initial;
-      margin:0;
-    }
-  }/*
+}
+/*
     blz/burger.css
     @ Source
     https://codepen.io/Danilo06/pen/PoNNvGm
 */
 
 blz-nav label{
-    display:flex;
-    flex-direction:column;
-    width:70px;
-    cursor:pointer;
-    padding:10px;
-  }
+  display:flex;
+  flex-direction:column;
+  width:70px;
+  cursor:pointer;
+  padding:10px;
+}
   
-  blz-nav label span{
-    background: #fff;
-    border-radius:10px;
-    height:7px;
-    margin: 7px 0;
-    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+blz-nav label span{
+  border-radius:10px;
+  height:7px;
+  margin: 7px 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1){
+  width:50%;
   
-  }
+}
+
+span:nth-of-type(2){
+  width:100%;
+}
+
+
+span:nth-of-type(3){
+  width:75%;
   
-  
-  span:nth-of-type(1){
-    width:50%;
-    
-  }
-  
-  span:nth-of-type(2){
-    width:100%;
-  }
-  
-  
-  span:nth-of-type(3){
-    width:75%;
-   
-  }
-  
-  
-  input[type="checkbox"]{
+}
+
+input[type="checkbox"]{
+  display:none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+  transform-origin:bottom;
+  transform:rotatez(45deg) translate(8px,0px)
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+  transform-origin:top;
+  transform:rotatez(-45deg)
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+  transform-origin:bottom;
+  width:50%;
+  transform: translate(30px,-11px) rotatez(45deg);
+}
+
+@media only screen and (min-width: 480px) {
+  #burger{
     display:none;
   }
-  
-  
-  input[type="checkbox"]:checked ~ span:nth-of-type(1){
-    transform-origin:bottom;
-    transform:rotatez(45deg) translate(8px,0px)
+}
+
+@media only screen and (max-width: 480px) {
+  #mainMenu{
+    display:none;
   }
-  
-  
-  input[type="checkbox"]:checked ~ span:nth-of-type(2){
-    transform-origin:top;
-    transform:rotatez(-45deg)
+  blz-nav a[is=logo]{
+    display:inline-block;
+    float:left;
+    clear:none;
+    width: 40%;
   }
-  
-  
-  input[type="checkbox"]:checked ~ span:nth-of-type(3){
-    
-    transform-origin:bottom;
-    width:50%;
-    transform: translate(30px,-11px) rotatez(45deg);
-  
+  blz-nav label{
+    float:right;
+    clear:none;
+    max-width:40%;
   }
-  
-  @media only screen and (min-width: 480px) {
-    #burger{
-      display:none;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    #mainMenu{
-      display:none;
-    }
-    blz-nav a[is=logo]{
-      display:inline-block;
-      float:left;
-      clear:none;
-      width: 40%;
-    }
-    blz-nav label{
-      float:right;
-      clear:none;
-      max-width:40%;
-    }
-  }
+}
