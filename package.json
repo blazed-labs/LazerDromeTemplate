@@ -1,0 +1,22 @@
+{
+  "name": "lazerdrome",
+  "version": "1.0.0",
+  "description": "simple website template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blazed-labs/LazerDromeTemplate.git"
+  },
+  "author": "blazedspace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blazed-labs/LazerDromeTemplate/issues"
+  },
+  "homepage": "https://github.com/blazed-labs/LazerDromeTemplate#readme",
+  "dependencies": {
+    "blz-std": "^1.0.0"
+  }
+}
