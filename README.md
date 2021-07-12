@@ -6,6 +6,15 @@ This template also showcases the [Blazed Standard CSS & JS library](https://gith
 ## Demo
 ![Screenshot](screenshot.PNG?raw=true "Blazed Labs Main Website")
 
+### Running Locally
+To run this project on your local machine, first copy this repo to any location. Navigate to that location (the root of this project) using any type of command promt (assure you have the lastest version of NodeJS and NPM installed on your machine), and issue the following command:
+
+```shell
+npm install
+```
+
+Once you have run this, simply open up "index.html" and it should work perfectly.
+
 # Repo Information
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/blazed-labs/LazerDromeTemplate) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://blazed.city/)
